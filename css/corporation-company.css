@@ -1,0 +1,67 @@
+
+body {
+    background-color: #f0f0f0;
+}
+hr {
+    margin: 0;
+}
+h3  {
+    text-align: center;
+    color: black;
+}
+header .phone-number{
+    background-color: white;
+    color: #1DB176;
+    padding: 5px;
+}
+header .navigation{
+    padding: 0;
+    background-color: #1DB176;
+    color: white;
+    text-align: center;
+}
+header .navigation li {
+    padding:  2rem;
+}
+header .navigation li:first-child {
+    padding:  2rem;
+    border-bottom : solid white 5px;
+}
+.body .row {
+    margin: 5rem 0;
+}
+.little-circle {
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+    border-radius: 50%;
+    background: transparent;
+    border: solid 1px orange;
+}
+.center {
+    text-align: center;
+}
+.footer .QR-code {
+    padding: 2rem 0 0 0;
+    background-color:  #1DB176;
+    color: white;
+}
+.corporation  {
+    background: white;
+    box-shadow: #f0f0f0 0px 0px 3px;
+    margin: 0;
+    padding:  0  ;
+    border-radius: 5px;
+}
+.corporation div {
+    padding: 1rem;
+}
+.corporation-head {
+    display: block;
+    overflow: hidden;
+    border-bottom: solid #f0f0f0 1px;
+}
+p{
+    line-height: 3rem;
+    padding-left: 5rem;
+}

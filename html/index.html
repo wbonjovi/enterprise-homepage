@@ -36,10 +36,6 @@
             padding:  2rem;
             border-bottom : solid white 5px;
         }
-        /*header .navigation li:hover {*/
-        /*background-color: #1DB176;*/
-        /*border-bottom : solid white 5px;*/
-        /*}*/
         .company-logo {
             width: 19.2%;
             display: inline-block;
@@ -47,7 +43,8 @@
         }
         .company-logo:hover {
             width: 20%;
-            box-shadow: #666 0px 0px 10px;background: #EEFF99;
+            box-shadow: #666 0px 0px 10px;
+            background: #EEFF99;
         }
         .company-logo img {
             width: 100%;
@@ -131,6 +128,10 @@
             background-color:  #1DB176;
             color: white;
         }
+        .nav li  a {
+            color: white;
+            background: transparent
+        }
     </style>
     <title>版本选择</title>
 </head>
@@ -156,10 +157,10 @@
             <div class=" row  ">
                 <div class="  pull-right">
                     <ul class="nav navbar-nav">
-                        <li class="active"> 首&nbsp;页 </li>
-                        <li> 职&nbsp;业 </li>
-                        <li> 推&nbsp;荐 </li>
-                        <li> 关&nbsp;于 </li>
+                        <li class="active"> <a href="index.html " style="color: white ; background: transparent" >首&nbsp;页 </a></li>
+                        <li> <a href="occupation.html " style="color: white ; background: transparent" >职&nbsp;业 </a></li>
+                        <li> <a href="occupation.html " style="color: white ; background: transparent" >推&nbsp;荐 </a></li>
+                        <li> <a href="occupation.html " style="color: white ; background: transparent" >关&nbsp;于 </a></li>
                     </ul>
                 </div>
             </div>
@@ -194,7 +195,6 @@
 </header>
 
 <div class="container body" >
-
     <div class="row description " >
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 ">
             <h3 class="center">
@@ -342,21 +342,31 @@
     </div>
     <div class="container corporation-company">
         <div class="row ">
-            <div class="company-logo ">
-                <img src="../images/alibaba.jpg" alt="">
-            </div>
-            <div class="company-logo ">
-                <img src="../images/yuntongxun.jpg" alt="">
-            </div>
-            <div class="company-logo ">
-                <img src="../images/qiniu.jpg" alt="">
-            </div>
-            <div class="company-logo ">
-                <img src="../images/yuntongxun.jpg" alt="">
-            </div>
-            <div class="company-logo ">
-                <img src="../images/alibaba.jpg" alt="">
-            </div>
+            <a href="corporation-company.html">
+                <div class="company-logo " >
+                    <img src="../images/alibaba.jpg" alt="">
+                </div>
+            </a>
+            <a href="corporation-company.html">
+                <div class="company-logo ">
+                    <img src="../images/yuntongxun.jpg" alt="">
+                </div>
+            </a>
+            <a href="corporation-company.html">
+                <div class="company-logo ">
+                    <img src="../images/qiniu.jpg" alt="">
+                </div>
+            </a>
+            <a href="corporation-company.html">
+                <div class="company-logo ">
+                    <img src="../images/yuntongxun.jpg" alt="">
+                </div>
+            </a>
+            <a href="corporation-company.html">
+                <div class="company-logo ">
+                    <img src="../images/alibaba.jpg" alt="">
+                </div>
+            </a>
         </div>
     </div>
 </div>
