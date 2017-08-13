@@ -23,7 +23,7 @@ header .navigation{
 header .navigation li {
     padding:  2rem;
 }
-header .navigation li:first-child {
+header .navigation #child {
     padding:  2rem;
     border-bottom : solid white 5px;
 }

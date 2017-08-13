@@ -2,11 +2,902 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>occupation</title>
+    <title>职位列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="../css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/occupation.css">
+    <style>
+
+        body {
+            background-color: #f0f0f0;
+        }
+        header .phone-number{
+            background-color: white;
+            color: #1DB176;
+            padding: 5px;
+        }
+        header .navigation{
+            padding: 0;
+            background-color: #1DB176;
+            color: white;
+            text-align: center;
+        }
+        header .navigation li {
+            padding:  2rem;
+        }
+        header .navigation #child {
+            padding:  2rem;
+            border-bottom : solid white 5px;
+        }
+        .footer .QR-code {
+            padding: 2rem 0 0 0;
+            background-color:  #1DB176;
+            color: white;
+        }
+        .page-header {
+            border-bottom: solid 1px gray;
+        }
+        .engineer {
+            margin: 1rem 0;
+        }
+        .engineer-table td {
+            padding: 1rem;
+            border: solid 1px #9d9d9d;
+            background: white;
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
-<p>嘿嘿哈哈</p>
-嘿嘿哈哈
+
+<header class="navbar "  >
+    <div class="container-fluid phone-number">
+        <div class="container ">
+            <div class="row ">
+                <div class="pull-left ">
+                    客服热线：010-594-78634
+                </div>
+                <div class="pull-right  ">
+                    <img src="../images/wechat.jpg " alt="">
+                    <img src="../images/QQ.jpg " alt="">
+                    <img src="../images/weibo.jpg " alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid navigation">
+        <div class="container ">
+            <div class=" row  ">
+                <div class="pull-left">
+                    <ul class="nav navbar-nav">
+                    <li > <img src="../images/jnshu-logo.png" alt=""></li>
+                </ul>
+                </div>
+                <div class="  pull-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active"  ID="child"> <a href="index.html " style="color: white ; background: transparent" >首&nbsp;页 </a></li>
+                        <li> <a href="occupation.html " style="color: white ; background: transparent" >职&nbsp;业 </a></li>
+                        <li> <a href="occupation.html " style="color: white ; background: transparent" >推&nbsp;荐 </a></li>
+                        <li> <a href="occupation.html " style="color: white ; background: transparent" >关&nbsp;于 </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container body"  >
+    <div class="row">
+        首页 > <a href="#"   style="color: #1DB176;">职业</a>
+    </div>
+    <div class="row">
+        <span style="color: gray">方向： &nbsp; &nbsp; </span>
+        <a href="" style=" background: green; color:white ">全部</a> &nbsp; &nbsp;
+        <a href="" style="color: black">前端开发</a> &nbsp; &nbsp;black
+        <a href="" style="color: black">后端开发</a> &nbsp; &nbsp;
+        <a href="" style="color: black">移动开发</a> &nbsp; &nbsp;
+        <a href="" style="color: black">整站开发</a> &nbsp; &nbsp;
+        <a href="" style="color: black">运营维护</a> &nbsp; &nbsp;
+    </div>
+
+
+    <div class="page-header">
+        <h1>前端开发方向</h1>
+    </div>
+    <div class="row">
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>后端开发方向</h1>
+    </div>
+    <div class="row">
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>移动开发方向</h1>
+    </div>
+    <div class="row">
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="page-header">
+        <h1>运维方向</h1>
+    </div>
+    <div class="row">
+        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-4 engineer "   >
+            <table class="hall-card engineer-table  "   >
+                <tr>
+                    <td  width="40%"  style="border-right:none " >
+                        <img class="thumb"  style="width: 100%"  src=" ../images/engineer.png">
+                    </td>
+                    <td   colspan="2"  style="border-left:none " >
+                        <h4>WEB前端工程师</h4>
+                        Web前端开发工程师，主要职责是
+                        利用（X）HTML/CSS/JavaScript/
+                        flash等各种Web技术进行产品的开发。
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">门槛</span> &nbsp;&nbsp;<img src="../images/star.png" alt="">
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">难易程度</span> &nbsp;&nbsp;
+                        <img src="../images/star.png" alt=""><img src="../images/star.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span style="color: gray;">成长周期</span> &nbsp;&nbsp; <span style="color: red;">1-3</span>年
+                    </td>
+                    <td width="50%" >
+                        <span style="color: gray;">稀缺程度</span> &nbsp;&nbsp;<span style="color: red;">345</span>家公司需要
+                    </td>
+                </tr>
+                <tr class="hall-card-year" style="height: 50px">
+                    <td class="text-center" width="40%">薪资待遇</td>
+                    <td colspan="2">
+                        <div class="row  "  >
+                            <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
+                        </div>
+                        <div class="row  " >
+                            <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
+                        </div>
+                        <div class="row  "    >
+                            <div class="col-xs-6"><span class="ng-binding">5年以上</span></div>
+                            <div class="col-xs-6 text-right"><span class="ng-binding">20-50K</span>/月</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                        <b>有<span style="color: red;">286</span>人正在学习</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=" " colspan="3">
+                    <span style="color: gray;">
+                        提示:在你学习之前你应该已经掌握XXXXX、XXXXX、XX等语言基础
+                    </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<footer class="footer  "  >
+    <div class="QR-code ">
+        <div class="container" >
+            <div class="row ">
+                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 ">
+                    <div class=" col-lg-6 col-md-6 col-xs-6 col-sm-6 ">
+                        <p>  技能树 — 改变你我 </p>
+                        <p><br></p>
+                        <p>    关于我们  |  联系我们  |  合作企业 </p>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-xs-5 col-sm-5  pull-right">
+                        <p>旗下网站</p>
+                        <p>
+                            <a href="" style="border-bottom: solid white 1px ;color: white">  草船云孵化器</a> &nbsp;
+                            <a href="" style=" color: white; ">  最强IT特训营</a>
+                        </p>
+                        <p> <a href="" style=" color: white; ">  葡萄藤轻游戏 </a>&nbsp;
+                            <a href="" style=" color: white; ">  桌游精灵</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="pull-right ">
+                    <p>微信公众平台</p>
+                    <img src="../images/QRcode.png" alt="">
+                </div>
+            </div>
+            <div class="row ">
+                <p style="text-align: center">Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
-</html>
