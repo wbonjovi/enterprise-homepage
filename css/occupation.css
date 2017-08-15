@@ -20,6 +20,11 @@ header .navigation #child {
     padding:  2rem;
     border-bottom : solid white 5px;
 }
+@media all and (max-width: 767px ) {
+    #navbar-collapse {
+        width: 100%;
+    }
+}
 .footer .QR-code {
     padding: 2rem 0 0 0;
     background-color:  #1DB176;

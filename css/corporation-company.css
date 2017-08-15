@@ -27,6 +27,11 @@ header .navigation #child {
     padding:  2rem;
     border-bottom : solid white 5px;
 }
+@media all and (max-width: 767px ) {
+    #navbar-collapse {
+        width: 100%;
+    }
+}
 .body .row {
     margin: 5rem 0;
 }
