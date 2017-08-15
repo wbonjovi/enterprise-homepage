@@ -6,135 +6,8 @@
     <script src="../js/jquery/2.0.0/jquery.min.js"></script>
     <link href="../css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <!--<link rel="stylesheet" type="text/css" href="../css/index.css">-->
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <style>
-        body {
-            background-color: #f0f0f0;
-        }
-        hr {
-            margin: 0;
-        }
-        h3  {
-            text-align: center;
-            color: black;
-        }
-        header .phone-number{
-            background-color: white;
-            color: #1DB176;
-            padding: 5px;
-        }
-        header .navigation{
-            padding: 0;
-            background-color: #1DB176;
-            color: white;
-            text-align: center;
-        }
-        header .navigation li {
-            padding:  2rem;
-        }
-        header .navigation li:first-child {
-            padding:  2rem;
-            border-bottom : solid white 5px;
-        }
-        .company-logo {
-            width: 19.2%;
-            display: inline-block;
-            margin: 0;
-        }
-        .company-logo:hover {
-            box-shadow: #666 0px 0px 10px;
-            background: #EEFF99;
-        }
-        .company-logo img {
-            width: 100%;
-            height: 100%;
-        }
-        .description {
-            font-size:  2rem;
-            color: #9d9d9d;
-            display: table ;
-            height: 20rem;
-            overflow: hidden;
-        }
-        .description div  {
-            display: table-cell;
-            height: 100%;
-        }
-        .description .green{
-            color: green;
-        }
-        .body .row {
-            margin: 5rem 0;
-        }
-        .well-learner-father {
-            overflow: hidden;
-        }
-        .well-learner .well-learner-page{
-            line-height: 2.5rem;
-            background-color: white;
-            padding:  2rem;
-            border-radius: 10px;
-            color: #9d9d9d;
-        }
-        .well-learner .well-learner-page:hover     {
-
-            box-shadow: #666 0px 0px 10px;
-        }
-        .well-learner .well-learner-page  h3 {
-            margin: 4rem 0 2rem 0;
-        }
-        .well-learner .four-circle {
-        }
-        .well-learner .four-circle .little-circle {
-            width: .8em;
-            height: .8em;
-            border-radius: 50%;
-        }
-
-        .well-learner  .four-circle  .green-circle {
-            background-color: green;
-        }
-
-        .well-learner  .four-circle .gray-circle {
-            background-color: #9d9d9d;
-        }
-
-        .well-learner   .four-circle .div-circle {
-            display: inline;
-        }
-        .well-learner   .four-circle .div-circle button{
-            border: none;
-            outline:none;
-        }
-        .how-to-learn .row {
-            display: inline-block;
-            height: 10rem;
-            background-color: green;
-            overflow: hidden;
-            vertical-align: middle;
-        }
-        .how-to-learn .number-crcle {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 4rem;
-
-            vertical-align: middle;
-        }
-        .center {
-            text-align: center;
-        }
-        footer .friendly-link {
-            background-color: white;
-        }
-        footer .QR-code {
-            padding: 2rem 0 0 0;
-            background-color:  #1DB176;
-            color: white;
-        }
-        .nav li  a {
-            color: white;
-            background: transparent
-        }
     </style>
     <title>版本选择</title>
 </head>
@@ -226,9 +99,9 @@
                 同班好友，同院学长，技术大牛，入学就混入职脉圈，为以后铺平道路
             </p>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 " style="
-            vertical-align: middle;" >
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 " style=" vertical-align: middle;" >
             <div class=" "  >
+                <br><br>
                 <p  class="center green">
                     <img src="../images/little-head.png " alt=""> 12400
                 </p>
@@ -250,25 +123,99 @@
     </div>
     <div class="  how-to-learn">
         <div class="row ">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 number-crcle " >1</div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  " >匹配你现在的个人情况 寻找适合自己的岗位</div>
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  " ><img src="../images/right-direction.jpg" alt=""></div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 number-crcle " >2</div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  " >了解职业前景薪金待遇、 竞争压力等</div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  parent">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  child  number-circle table-father" >
+                    <span class="number-circle-span table-son">1</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 child " >
+                    匹配你现在的个人情况 寻找适合自己的岗位
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1   child" STYLE="height: 100%;">
+                    <img src="../images/right-direction.png" alt="">
+                </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1  " ><img src="../images/right-direction.jpg" alt=""></div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 number-crcle " >3</div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  " >匹配你现在的个人情况 寻找适合自己的岗位</div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1  " ><img src="../images/right-direction.jpg" alt=""></div>
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 number-crcle " >4</div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4  " >了解职业前景薪金待遇、 竞争压力等</div>
-            </div>
-        </div>
-        <div class="row ">
 
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  parent">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  child  number-circle table-father" >
+                    <span class="number-circle-span table-son">2</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 child " >
+                    了解职业前景薪金待遇、 竞争压力等
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1   child" STYLE="height: 100%;">
+                    <img src="../images/right-direction.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  parent">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  child  number-circle table-father" >
+                    <span class="number-circle-span table-son">3</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 child " >
+                    掌握行业内顶级技能
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1   child" STYLE="height: 100%;">
+                    <img src="../images/right-direction.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  parent">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  child  number-circle table-father" >
+                    <span class="number-circle-span table-son">4</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 child " >
+                    查看职业目标任务
+                </div>
+            </div>
         </div>
+
+        <div class="row ">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  parent">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  child  number-circle table-father" >
+                    <span class="number-circle-span table-son">5</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 child " >
+                    加入班级，和小伙伴们 互帮互助，一块学习
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1   child" STYLE="height: 100%;">
+                    <img src="../images/right-direction.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  parent">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  child  number-circle table-father" >
+                    <span class="number-circle-span table-son">6</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 child " >
+                    选择导师，一路引导， 加速自己成长
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1   child" STYLE="height: 100%;">
+                    <img src="../images/right-direction.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  parent">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  child  number-circle table-father" >
+                    <span class="number-circle-span table-son">7</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 child " >
+                    完成职业技能，升 级业界大牛
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1   child" STYLE="height: 100%;">
+                    <img src="../images/right-direction.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3  parent">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2  child  number-circle table-father" >
+                    <span class="number-circle-span table-son">8</span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 child " >
+                    参考学习资源，掌握 技能点，逐个完成任务
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
