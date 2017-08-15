@@ -100,13 +100,10 @@ header .navigation li:first-child {
     outline:none;
 }
 .how-to-learn .row {
-    display: inline-block;
-    overflow: hidden;
-    vertical-align: middle;
     font-size: 1.2rem;
 }
 .how-to-learn .table-father {
-    display: table;
+    /*display: table;*/
 }
 .how-to-learn .table-son {
     display: table-cell;
@@ -127,7 +124,9 @@ header .navigation li:first-child {
     text-align: center;
 }
 .parent {
-    display:flex;justify-content:center;align-items:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .child{
     display: inline-block;
