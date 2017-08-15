@@ -48,7 +48,7 @@ header .navigation #child {
 }
 .corporation  {
     background: white;
-    box-shadow: #f0f0f0 0px 0px 3px;
+    box-shadow: #f0f0f0  3px;
     margin: 0;
     padding:  0  ;
     border-radius: 5px;

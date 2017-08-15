@@ -53,6 +53,9 @@ header .navigation li:first-child {
 .description .green{
     color: green;
 }
+.description #people-friend {
+    border-right: dashed  gray 3px;
+}
 .body .row {
     margin: 5rem 0;
 }
