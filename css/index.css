@@ -120,9 +120,6 @@ header .navigation li:first-child {
     box-shadow: #666 0px 0px 2px;
     margin: 2px;
 }
-.center {
-    text-align: center;
-}
 .parent {
     display:flex;
     justify-content:center;
@@ -130,6 +127,18 @@ header .navigation li:first-child {
 }
 .child{
     display: inline-block;
+}
+.center-text {
+    width: 9%;
+    color: gray;
+    display: inline-block ;
+    margin: 0;
+    overflow: hidden;
+    font-weight:bold
+}
+.center{
+    padding: 0;
+    width: 100%;
 }
 footer .friendly-link {
     background-color: white;
