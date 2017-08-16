@@ -160,44 +160,23 @@ footer .friendly-link {
     background-color: white;
 }
 footer .center-text {
-    width: 9.5%;
     color: gray;
     display: inline-block ;
     margin: 0;
     overflow: hidden;
-    font-weight:bold
+    font-weight:bold;
 }
 footer .center{
-    text-align: center;
-    padding: 0;
-    width: 100%;
+    display: flex ;
+    justify-content: space-between;
 }
-@media all and ( max-width: 787px) {
-    footer .center-text {
-        width: 30%;
-        color: gray;
-        display: inline-block ;
-        margin: 0;
-        overflow: hidden;
-        font-weight:bold
-    }
+@media all and ( max-width: 767px) {
     footer .center{
-        text-align: left;
+        display: flex ;
+        flex-wrap: wrap;
     }
 }
-@media all and ( max-width: 375px) {
-    footer .center-text {
-        width: 100%;
-        color: gray;
-        display: inline-block ;
-        margin: 0;
-        overflow: hidden;
-        font-weight:bold
-    }
-    footer .center{
-        text-align: center;
-    }
-}
+
 footer .QR-code {
     padding: 2rem 0 0 0;
     background-color:  #1DB176;
