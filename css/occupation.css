@@ -24,6 +24,9 @@ header .navigation #child {
     #navbar-collapse {
         width: 100%;
     }
+    #jnshu-logo {
+        height: 28px;
+    }
 }
 .footer .QR-code {
     padding: 2rem 0 0 0;

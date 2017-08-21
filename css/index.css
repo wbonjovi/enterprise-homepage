@@ -37,6 +37,9 @@ header .navigation #child {
     #navbar-collapse {
         width: 100%;
     }
+    #jnshu-logo {
+        height: 28px;
+    }
 }
 .company-logo {
     width: 19.2%;
@@ -45,8 +48,23 @@ header .navigation #child {
 }
 @media all and (max-width: 767px) {
     .company-logo {
+        width: 32.6%;
+        vertical-align: middle;
+        margin-bottom: 5%;
+    }
+}
+@media all and (max-width: 425px) {
+    .company-logo {
+        width: 49%;
+        vertical-align: middle;
+        margin-bottom: 5%;
+    }
+}
+@media all and (max-width: 320px) {
+    .company-logo {
         width: 100%;
-        margin: 5%;
+        vertical-align: middle;
+        margin-bottom: 5%;
     }
 }
 .company-logo:hover {
@@ -73,7 +91,7 @@ header .navigation #child {
 .description .green{
     color: green;
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 991px){
     .description {
         text-align: center;
     }
@@ -140,12 +158,7 @@ header .navigation #child {
     box-shadow: #666 0px 0px 2px;
     margin: 2px;
 }
-@media all and (max-width: 768px ) {
-    .how-to-learn .right-direction {
-        display: none;
-    }
-}
-.parent {
+ .parent {
     display:flex;
     justify-content:center;
     align-items:center;
@@ -174,6 +187,9 @@ footer .center{
     footer .center{
         display: flex ;
         flex-wrap: wrap;
+    }
+    footer .center-text {
+        width: 50%;
     }
 }
 
