@@ -1,0 +1,241 @@
+
+
+body {
+  background-color: #f0f0f0;
+}
+.body .row {
+  margin: 2rem 0;
+}
+hr {
+  margin: 0;
+}
+h3  {
+  text-align: center;
+  color: black;
+}
+header {
+   .phone-number {
+     background-color: white;
+     color: #1DB176;
+     padding: 5px;
+   }
+
+  @media all and (max-width: 426px ) {
+     .phone-number{
+      background-color: white;
+      color: #1DB176;
+      padding: 5px 20px;
+    }
+  }
+   .navigation{
+    padding: 0;
+    background-color: #1DB176;
+    color: white;
+    text-align: center;
+
+      li {
+       padding:  2rem;
+     }
+
+      #child {
+        padding: 2rem;
+        border-bottom: solid white 5px;
+      }
+  }
+  @media all and (max-width: 767px ) {
+    #navbar-collapse {
+      width: 100%;
+    }
+    #jnshu-logo {
+      height: 28px;
+    }
+  }
+
+}
+
+
+
+.company-logo {
+  width: 19.2%;
+  display: inline-block;
+  margin: 0;
+  &:hover {
+    box-shadow: #666 0px 0px 10px;
+    background: #EEFF99;
+  }
+
+   img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .company-logo {
+    width: 32.6%;
+    vertical-align: middle;
+    margin-bottom: 5%;
+  }
+}
+@media all and (max-width: 425px) {
+  .company-logo {
+    width: 49%;
+    vertical-align: middle;
+    margin-bottom: 5%;
+  }
+}
+@media all and (max-width: 320px) {
+  .company-logo {
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 5%;
+  }
+}
+
+
+
+.description {
+  font-size:  2rem;
+  color: #9d9d9d;
+  display: table ;
+  overflow: hidden;
+
+   div  {
+    display: table-cell;
+    height: 100%;
+  }
+
+   .green{
+    color: #1DB176;
+  }
+
+   #people-friend {
+    border-right: dashed  gray 3px;
+  }
+}
+@media all and (max-width: 991px){
+  .description {
+    text-align: center;
+
+     #people-friend {
+      border : none;
+    }
+  }
+}
+.well-learner  {
+
+  .well-learner-father {
+    overflow: hidden;
+  }
+
+   .well-learner-page{
+    margin: 2px;
+    line-height: 2.5rem;
+    background-color: white;
+    padding:  2rem;
+    border-radius: 10px;
+    color: #9d9d9d;
+      &:hover     {
+       box-shadow: #666 0px 0px 10px;
+     }
+
+       h3 {
+       margin: 4rem 0 2rem 0;
+     }
+  }
+
+   .four-circle {
+       .div-circle {
+       display: inline;
+
+         .little-circle {
+           width: .8em;
+           height: .8em;
+           border-radius: 50%;
+         }
+         .green-circle {
+           background-color: #1DB176;
+         }
+         .gray-circle {
+           background-color: #9d9d9d;
+         }
+
+          button {
+           border: none;
+           outline: none;
+         }
+     }
+   }
+}
+
+
+.how-to-learn {
+   .row {
+    font-size: 1.2rem;
+  }
+   .table-son {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+   .number-circle {
+    background : white ;
+    display: table;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color:   #1DB176;
+    box-shadow: #666 0px 0px 2px;
+    margin: 2px;
+  }
+}
+
+.parent {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.child{
+  display: inline-block;
+}
+.center{
+  text-align: center;
+}
+
+footer {
+
+   .friendly-link {
+    background-color: white;
+  }
+   .center{
+    display: flex ;
+    justify-content: space-between;
+
+     .center-text {
+       color: gray;
+       display: inline-block ;
+       margin: 0;
+       overflow: hidden;
+       font-weight:bold;
+     }
+  }
+  @media all and ( max-width: 767px) {
+     .center{
+      display: flex ;
+      flex-wrap: wrap;
+
+       .center-text {
+         width: 50%;
+       }
+    }
+  }
+   .QR-code {
+    padding: 2rem 0 0 0;
+    background-color:  #1DB176;
+    color: white;
+  }
+  .nav li  a {
+    color: white;
+    background: transparent
+  }
+}

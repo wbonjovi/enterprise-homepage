@@ -59,10 +59,7 @@ header .navigation #child {
 .box .bmbox{
     display:none;
 }
-father {
-    position:relative;
-}
-
+ 
 .box:hover .bmbox {
     width: 100%;
     height: 100%;
@@ -74,6 +71,6 @@ father {
     padding: 3rem;
     color: white;
 }
-.center {
+.text-center {
     text-align: center;
 }

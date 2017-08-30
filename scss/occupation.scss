@@ -1,0 +1,92 @@
+
+
+body {
+  background-color: #f0f0f0;
+}
+header {
+  .phone-number{
+    background-color: white;
+    color: #1DB176;
+    padding: 5px;
+  }
+  .navigation{
+    padding: 0;
+    background-color: #1DB176;
+    color: white;
+    text-align: center;
+    li {
+      padding:  2rem;
+    }
+
+    #child {
+      padding:  2rem;
+      border-bottom : solid white 5px;
+    }
+  }
+}
+@media all and (max-width: 767px ) {
+  #navbar-collapse {
+    width: 100%;
+  }
+  #jnshu-logo {
+    height: 28px;
+  }
+}
+
+.footer .QR-code {
+  padding: 2rem 0 0 0;
+  background-color:  #1DB176;
+  color: white;
+}
+
+
+.page-header {
+  border-bottom: solid 1px gray;
+}
+.engineer {
+  margin: 1rem 0;
+  overflow: hidden;
+  display: block;
+
+   .row {
+    margin:  0 15px;
+  }
+  .engineer-table{
+    table{
+      width: 100%;
+
+      .text-center {
+        text-align: center;
+      }
+    }
+
+    td {
+      padding: 1rem;
+      border: solid 1px #9d9d9d;
+      background: white;
+      font-size: 1rem;
+    }
+  }
+}
+
+
+.box{
+  position:relative;
+   .bmbox{
+    display:none;
+  }
+
+
+}
+
+.box:hover .bmbox {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  position: absolute;
+  z-index:1;
+  display: table-cell;
+  margin-right:  -15px;
+  padding: 3rem;
+  color: white;
+}
