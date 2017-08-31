@@ -27,32 +27,7 @@ body {
     background: transparent;
     border: solid 1px orange; }
 
-header .phone-number {
-  background-color: white;
-  color: #1DB176;
-  padding: 5px; }
-header .navigation {
-  padding: 0;
-  background-color: #1DB176;
-  color: white;
-  text-align: center; }
-  header .navigation li {
-    padding: 2rem; }
-  header .navigation #child {
-    padding: 2rem;
-    border-bottom: solid white 5px; }
-@media all and (max-width: 767px) {
-  header #navbar-collapse {
-    width: 100%; }
-  header #jnshu-logo {
-    height: 28px; } }
-
 .center {
   text-align: center; }
-
-.footer .QR-code {
-  padding: 2rem 0 0 0;
-  background-color: #1DB176;
-  color: white; }
 
 /*# sourceMappingURL=corporation-company.css.map */

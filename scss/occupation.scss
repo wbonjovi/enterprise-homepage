@@ -3,27 +3,7 @@
 body {
   background-color: #f0f0f0;
 }
-header {
-  .phone-number{
-    background-color: white;
-    color: #1DB176;
-    padding: 5px;
-  }
-  .navigation{
-    padding: 0;
-    background-color: #1DB176;
-    color: white;
-    text-align: center;
-    li {
-      padding:  2rem;
-    }
 
-    #child {
-      padding:  2rem;
-      border-bottom : solid white 5px;
-    }
-  }
-}
 @media all and (max-width: 767px ) {
   #navbar-collapse {
     width: 100%;
@@ -33,11 +13,6 @@ header {
   }
 }
 
-.footer .QR-code {
-  padding: 2rem 0 0 0;
-  background-color:  #1DB176;
-  color: white;
-}
 
 
 .page-header {
