@@ -13,46 +13,6 @@ h3  {
   text-align: center;
   color: black;
 }
-header {
-   .phone-number {
-     background-color: white;
-     color: #1DB176;
-     padding: 5px;
-   }
-
-  @media all and (max-width: 426px ) {
-     .phone-number{
-      background-color: white;
-      color: #1DB176;
-      padding: 5px 20px;
-    }
-  }
-   .navigation{
-    padding: 0;
-    background-color: #1DB176;
-    color: white;
-    text-align: center;
-
-      li {
-       padding:  2rem;
-     }
-
-      #child {
-        padding: 2rem;
-        border-bottom: solid white 5px;
-      }
-  }
-  @media all and (max-width: 767px ) {
-    #navbar-collapse {
-      width: 100%;
-    }
-    #jnshu-logo {
-      height: 28px;
-    }
-  }
-
-}
-
 
 
 .company-logo {
@@ -233,9 +193,5 @@ footer {
     padding: 2rem 0 0 0;
     background-color:  #1DB176;
     color: white;
-  }
-  .nav li  a {
-    color: white;
-    background: transparent
   }
 }
