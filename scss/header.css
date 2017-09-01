@@ -10,16 +10,23 @@ header .phone-number {
 header .navigation {
   padding: 0;
   background-color: #1DB176;
-  color: white;
-  text-align: center; }
-  header .navigation li {
-    padding: 2rem; }
+  color: white; }
+  header .navigation .pull-right div {
+    height: 100%;
+    display: inline-block;
+    padding: 1rem; }
   header .navigation #child {
-    padding: 2rem;
     border-bottom: solid white 5px; }
+  header .navigation .pull-left {
+    padding-left: 1rem; }
+  @media all and (max-width: 767px) {
+    header .navigation .pull-right {
+      padding-right: 2rem; }
+      header .navigation .pull-right div {
+        height: 100%;
+        display: inline-block;
+        padding: .1rem; } }
 @media all and (max-width: 767px) {
-  header #navbar-collapse {
-    width: 100%; }
   header #jnshu-logo {
     height: 28px; } }
 

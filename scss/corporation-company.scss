@@ -11,14 +11,20 @@ body {
   p{
     line-height: 3rem;
   }
+   .body .row {
+    margin: 2rem 0;
+  }
+
+
+
   .corporation  {
     background: white;
     box-shadow: #f0f0f0  3px;
-    margin: 1rem 0 ;
-    padding:  3rem  ;
+    margin-bottom: 1rem ;
+    margin-top: 1rem ;
     border-radius: 5px;
-    div {
-      padding: 1rem;
+    p {
+      padding: 1em;
     }
     .corporation-head {
       display: block;
@@ -35,8 +41,6 @@ body {
     border: solid 1px orange;
   }
 }
-
-
 
 .center {
   text-align: center;

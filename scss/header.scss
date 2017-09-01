@@ -17,21 +17,26 @@ header {
     padding: 0;
     background-color: #1DB176;
     color: white;
-    text-align: center;
 
-    li {
-      padding:  2rem;
+    .pull-right div {
+      height: 100%;display: inline-block; padding: 1rem;
     }
-
     #child {
-      padding: 2rem;
       border-bottom: solid white 5px;
+    }
+    .pull-left {
+      padding-left: 1rem;
+    }
+    @media all and (max-width: 767px ) {
+      .pull-right {
+        padding-right: 2rem;
+        div {
+          height: 100%;display: inline-block; padding: .1rem;
+        }
+      }
     }
   }
   @media all and (max-width: 767px ) {
-    #navbar-collapse {
-      width: 100%;
-    }
     #jnshu-logo {
       height: 28px;
     }

@@ -4,10 +4,7 @@
     <meta charset="UTF-8"><meta charset="UTF-8">
     <title>战略合作伙伴</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="../js/jquery/2.0.0/jquery.min.js"></script>
-    <link href="../css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/bootstrap/3.3.6/bootstrap-responsive.css" rel="stylesheet">
-    <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../scss/component-gallery.css">
     <link rel="stylesheet" type="text/css" href="../scss/corporation-company.css">
     <link rel="stylesheet" type="text/css" href="../scss/header.css">
     <link rel="stylesheet" type="text/css" href="../scss/footer.css">
@@ -29,42 +26,58 @@
             </div>
         </div>
     </div>
-
-    <div class="container-fluid navigation">
-        <div class="container ">
-            <div class=" row  ">
-                <div class="pull-left">
-                    <ul class="nav navbar-nav">
-                        <li > <img src="../images/jnshu-logo.png" alt="" id="jnshu-logo"></li>
-                    </ul>
+    <!--导航栏-->
+    <div class="container-fluid navigation "  style="padding: 0;  "  >
+        <div class="container "  style="padding: 0" >
+            <div class=" row  "     style="padding: 0" >
+                <div class="pull-left parent" style="height: 100%;padding: 0 0 0 2rem">
+                    <img src="../images/jnshu-logo.png" alt="" id="jnshu-logo"   >
                 </div>
-                <div class="pull-right">
-                    <ul class="nav navbar-nav">
-                        <button type="button" class="navbar-btn navbar-toggle pull-right" data-toggle="collapse" data-target="#navbar-collapse ">
-                            <span class="sr-only">切换导航</span>
-                            <img src="../images/right-direction.png">
-                        </button>
-                    </ul>
-                </div>
-                <div class="navbar-collapse collapse pull-right" id="navbar-collapse"   >
-                    <ul class="navbar-nav nav"  style="text-align: center;" >
-                        <li > <a href="index.html " style="color: white ; background: transparent" >首&nbsp;页 </a></li>
-                        <li > <a href="occupation.html " style="color: white ; background: transparent" >职&nbsp;业 </a></li>
-                        <li ID="child"> <a href="corporation-company.html " style="color: white ; background: transparent" >推&nbsp;荐 </a></li>
-                        <li > <a href="occupation.html " style="color: white ; background: transparent" >关&nbsp;于 </a></li>
-                    </ul>
+                <div class="pull-right"  style="padding: 0 2rem  0 0; " >
+                    <div  style=" "  > <a href="index.html " style="color: white ; background: transparent" >首&nbsp;页 </a></div>
+                    <div  style=" " id="child"> <a href="occupation.html " style="color: white ; background: transparent" >职&nbsp;业 </a></div>
+                    <div  style=" "> <a href="corporation-company.html " style="color: white ; background: transparent" >推&nbsp;荐 </a></div>
+                    <div  style=" "> <a href="occupation.html " style="color: white ; background: transparent" >关&nbsp;于 </a></div>
                 </div>
             </div>
         </div>
     </div>
+    <!--<div class="container-fluid navigation">-->
+        <!--<div class="container ">-->
+            <!--<div class=" row  ">-->
+                <!--<div class="pull-left">-->
+                    <!--<ul class="nav navbar-nav">-->
+                        <!--<li > <img src="../images/jnshu-logo.png" alt="" id="jnshu-logo"></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="pull-right">-->
+                    <!--<ul class="nav navbar-nav">-->
+                        <!--<button type="button" class="navbar-btn navbar-toggle pull-right" data-toggle="collapse" data-target="#navbar-collapse ">-->
+                            <!--<span class="sr-only">切换导航</span>-->
+                            <!--<img src="../images/right-direction.png">-->
+                        <!--</button>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="navbar-collapse collapse pull-right" id="navbar-collapse"   >-->
+                    <!--<ul class="navbar-nav nav"  style="text-align: center;" >-->
+                        <!--<li > <a href="index.html " style="color: white ; background: transparent" >首&nbsp;页 </a></li>-->
+                        <!--<li > <a href="occupation.html " style="color: white ; background: transparent" >职&nbsp;业 </a></li>-->
+                        <!--<li ID="child"> <a href="corporation-company.html " style="color: white ; background: transparent" >推&nbsp;荐 </a></li>-->
+                        <!--<li > <a href="occupation.html " style="color: white ; background: transparent" >关&nbsp;于 </a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 
     <img   alt="First slide [1140x500]" style="width: 100%;height:100%" src="../images/faster-one-step.png" data-holder-rendered="true">
 </header>
 
-<div class="container body" >
+<div class="container body " >
     <b>首页 > <a href="#"   style="color: #1DB176;">合作企业</a></b>
-    <div class="row  ">
-        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 corporation pull-left text-center" style=" ">
+    <div class="row  "  >
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 corporation  pull-left  " style=" ">
+            <div style="margin: 15px">
             <div class="corporation-head " >
                 <div class="  "  >
                     <b class="center">合作企业</b>
@@ -122,9 +135,10 @@
                     </p>
                 </div>
             </div>
+            </div>
         </div>
 
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 corporation pull-right">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 corporation  pull-right">
             <div class="corporation-head " >
                 <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  " style=" ">
                     <img src="../images/tudou.png" alt="" style="height: 100%; width:100%">

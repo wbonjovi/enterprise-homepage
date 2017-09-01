@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="../js/jquery/2.0.0/jquery.min.js"></script>
-    <link href="../css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/bootstrap/3.3.6/bootstrap-responsive.css" rel="stylesheet">
-    <script src="../js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../scss/component-gallery.css">
     <link rel="stylesheet" type="text/css" href="../scss/occupation.css">
     <link rel="stylesheet" type="text/css" href="../scss/header.css">
     <link rel="stylesheet" type="text/css" href="../scss/footer.css">
@@ -33,33 +30,50 @@
         </div>
     </div>
 
-    <div class="container-fluid navigation">
-        <div class="container ">
-            <div class=" row  ">
-                <div class="pull-left">
-                    <ul class="nav navbar-nav">
-                        <li > <img src="../images/jnshu-logo.png" alt="" id="jnshu-logo"></li>
-                    </ul>
+    <!--导航栏-->
+    <div class="container-fluid navigation "  style="padding: 0;  "  >
+        <div class="container "  style="padding: 0" >
+            <div class=" row  "     style="padding: 0" >
+                <div class="pull-left parent" style="height: 100%;padding: 0 0 0 2rem">
+                    <img src="../images/jnshu-logo.png" alt="" id="jnshu-logo"   >
                 </div>
-                <div class="pull-right">
-                    <ul class="nav navbar-nav">
-                        <button type="button" class="navbar-btn navbar-toggle pull-right" data-toggle="collapse" data-target="#navbar-collapse ">
-                            <span class="sr-only">切换导航</span>
-                            <img src="../images/right-direction.png">
-                        </button>
-                    </ul>
-                </div>
-                <div class="navbar-collapse collapse pull-right" id="navbar-collapse"   >
-                    <ul class="navbar-nav nav"  style="text-align: center;" >
-                        <li > <a href="index.html " style="color: white ; background: transparent" >首&nbsp;页 </a></li>
-                        <li ID="child"> <a href="occupation.html " style="color: white ; background: transparent" >职&nbsp;业 </a></li>
-                        <li > <a href="corporation-company.html " style="color: white ; background: transparent" >推&nbsp;荐 </a></li>
-                        <li > <a href="occupation.html " style="color: white ; background: transparent" >关&nbsp;于 </a></li>
-                    </ul>
+                <div class="pull-right"  style="padding: 0 2rem  0 0; " >
+                    <div  style=" "  > <a href="index.html " style="color: white ; background: transparent" >首&nbsp;页 </a></div>
+                    <div  style=" " id="child"> <a href="occupation.html " style="color: white ; background: transparent" >职&nbsp;业 </a></div>
+                    <div  style=" "> <a href="corporation-company.html " style="color: white ; background: transparent" >推&nbsp;荐 </a></div>
+                    <div  style=" "> <a href="occupation.html " style="color: white ; background: transparent" >关&nbsp;于 </a></div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!--<div class="container-fluid navigation">-->
+        <!--<div class="container ">-->
+            <!--<div class=" row  ">-->
+                <!--<div class="pull-left">-->
+                    <!--<ul class="nav navbar-nav">-->
+                        <!--<li > <img src="../images/jnshu-logo.png" alt="" id="jnshu-logo"></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="pull-right">-->
+                    <!--<ul class="nav navbar-nav">-->
+                        <!--<button type="button" class="navbar-btn navbar-toggle pull-right" data-toggle="collapse" data-target="#navbar-collapse ">-->
+                            <!--<span class="sr-only">切换导航</span>-->
+                            <!--<img src="../images/right-direction.png">-->
+                        <!--</button>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="navbar-collapse collapse pull-right" id="navbar-collapse"   >-->
+                    <!--<ul class="navbar-nav nav"  style="text-align: center;" >-->
+                        <!--<li > <a href="index.html " style="color: white ; background: transparent" >首&nbsp;页 </a></li>-->
+                        <!--<li ID="child"> <a href="occupation.html " style="color: white ; background: transparent" >职&nbsp;业 </a></li>-->
+                        <!--<li > <a href="corporation-company.html " style="color: white ; background: transparent" >推&nbsp;荐 </a></li>-->
+                        <!--<li > <a href="occupation.html " style="color: white ; background: transparent" >关&nbsp;于 </a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 </header>
 <div class="container    "  >
     <div class="row">
@@ -82,15 +96,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -123,11 +139,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -156,15 +172,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -197,11 +215,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -230,15 +248,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -271,11 +291,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -301,6 +321,7 @@
                 </table>
             </div>
         </div>
+
     </div>
 
     <div class="page-header">
@@ -310,15 +331,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -351,11 +374,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -384,15 +407,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -425,11 +450,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -458,15 +483,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -499,11 +526,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -532,15 +559,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -573,11 +602,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -606,15 +635,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -647,11 +678,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -686,15 +717,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -727,11 +760,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -760,15 +793,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -801,11 +836,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -834,15 +869,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -875,11 +912,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -914,15 +951,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -955,11 +994,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>
@@ -988,15 +1027,17 @@
         <div class=" col-lg-4 col-md-4 col-sm-6 col-xs-12 engineer "   >
             <div class="box">
                 <div class="bmbox  ">
-                    <h4  class="center ">WEB前端工程师</h4>
-                    iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
-                    于类Unix的商业操作系统。国内iOS开
-                    发起步相对较晚，人才培养机制更是远
-                    远跟不上市场发展速度。有限的iOS开
-                    发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
-                    更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    <div>
+                        <h4  class="center ">WEB前端工程师</h4>
+                        iOS是由苹果公司开发的移动操作统，iOS与苹果的Mac OS X操作系统一样，也是以Darwin为基础的，因此同样属
+                        于类Unix的商业操作系统。国内iOS开
+                        发起步相对较晚，人才培养机制更是远
+                        远跟不上市场发展速度。有限的iOS开
+                        发人才成了国内企业必争的资源。国内  iOS开发起步相对较晚，人才培养机制
+                        更是远远跟不上市场发展速度。有限的iOS开发人才成了国内企业必争的资源。
+                    </div>
                 </div>
-                <table class="hall-card engineer-table  "   >
+                <table class="  engineer-table  "  cellspacing="0" >
                     <tbody>
                     <tr>
                         <td  width="40%"  style="border-right:none " >
@@ -1029,11 +1070,11 @@
                     <tr class="hall-card-year" style="height: 50px">
                         <td class="text-center" width="40%">薪资待遇</td>
                         <td colspan="2"  style="padding: 0" >
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">0-1年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">6-8K</span>/月</div>
                             </div>
-                            <div class="row  "  style=" border-bottom: solid 1px gray; margin:0  ; padding: 1rem">
+                            <div class="row  "  style=" border-bottom: solid 2px #9d9d9d; margin:0  ; padding: 1rem">
                                 <div class="col-xs-6"><span class="ng-binding">2-5年</span></div>
                                 <div class="col-xs-6 text-right"><span class="ng-binding">8-18K</span>/月</div>
                             </div>

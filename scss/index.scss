@@ -1,5 +1,68 @@
 
 
+
+
+* {
+  box-sizing: border-box;
+}
+
+#banner-wrap-div {
+  overflow: hidden;
+  position: relative;
+  height:   31.25vw;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  .banner-wrap {
+    position: absolute;
+    width: 400%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    animation: banner 10s infinite;
+    transform: translate(-25%,0);
+
+    img {
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      height: 100%;
+    }
+  }
+
+  @keyframes banner {
+    0% {
+      transform: translate(0,0);
+    }
+    20% {
+      transform: translate(0,0);
+    }
+    25% {
+      transform: translate(-25%,0);
+    }
+    45% {
+      transform: translate(-25%,0);
+    }
+    50% {
+      transform: translate(-50%,0);
+    }
+    70% {
+      transform: translate(-50%,0);
+    }
+    75% {
+      transform: translate(-75%,0);
+    }
+    95% {
+      transform: translate(-75%,0);
+    }
+  }
+}
+
+.description-part{
+  margin: 0  ;
+}
+
 body {
   background-color: #f0f0f0;
 }
@@ -55,10 +118,13 @@ h3  {
 
 
 .description {
-  font-size:  2rem;
+  font-size:  1.5rem;
   color: #9d9d9d;
   display: table ;
   overflow: hidden;
+  .description-part{
+    margin: 0;
+  }
 
    div  {
     display: table-cell;
@@ -69,9 +135,12 @@ h3  {
     color: #1DB176;
   }
 
-   #people-friend {
+  #people-friend {
     border-right: dashed  gray 3px;
   }
+  #people-friend + div {
+    padding: 0 15px;
+   }
 }
 @media all and (max-width: 991px){
   .description {
