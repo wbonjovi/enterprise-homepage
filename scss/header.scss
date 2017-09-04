@@ -11,8 +11,12 @@ header {
       background-color: white;
       color: #1DB176;
       padding: 5px 20px;
+      font-size: 1rem;
     }
   }
+
+  @import url(../css/bootstrap/3.3.6/bootstrap.min.css);
+
   .navigation{
     padding: 0;
     background-color: #1DB176;
@@ -22,7 +26,7 @@ header {
       height: 100%;display: inline-block; padding: 1rem;
     }
     #child {
-      border-bottom: solid white 5px;
+      border-bottom: solid white 2px;
     }
     .pull-left {
       padding-left: 1rem;
@@ -36,9 +40,57 @@ header {
       }
     }
   }
+  #jnshu-logo {
+    height:  100%;
+  }
   @media all and (max-width: 767px ) {
     #jnshu-logo {
-      height: 28px;
+      height: 44px;
+    }
+  }
+
+  @media all and (max-width: 767px ) {
+    #change {
+      display: none;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    width: 32%;
+    display: inline-block;
+
+
+    &:hover .dropdown-content {
+      display: inline-block;
+      width: 100%;
+    }
+    .dropdown-content {
+      display: none;
+      position: fixed;
+      right: 0;
+      background-color: #1DB176;
+      min-width: 160px;
+      box-shadow: 0  8px 16px 0  rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+      //width: 100%;
+      text-align: center;
+    }
+    .dropdown-menu a {
+      color: white;
+      text-decoration:none;
+      li {
+        color: white;
+        list-style-type:none;
+        text-align: left;
+      }
+    }
+  }
+
+  @media all and (min-width: 768px ) {
+    .dropdown {
+      display: none;
     }
   }
 
